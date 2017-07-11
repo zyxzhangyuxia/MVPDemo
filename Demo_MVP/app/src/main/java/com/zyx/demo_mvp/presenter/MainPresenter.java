@@ -1,6 +1,7 @@
 package com.zyx.demo_mvp.presenter;
 
 
+import android.content.Intent;
 import android.text.TextUtils;
 import android.widget.Toast;
 
@@ -46,5 +47,11 @@ public class MainPresenter {
         UserLoginInfo userLoginInfo = new UserLoginInfo();
         userLoginInfo.setUserName(userName);
         userLoginInfo.setPwd(pwd);
+    }
+
+    public void startActivity(Class <?> cls){
+        Intent intent = new Intent();
+        intent.setClass(iLogin.getContext(),cls);
+        iLogin.getContext().startActivity(intent);
     }
 }

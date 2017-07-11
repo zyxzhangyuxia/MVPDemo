@@ -5,4 +5,11 @@
     <string name="login">登录</string>
     <string name="err_tip">用户名或密码不能为空</string>
     <string name="login_success">登录成功</string>
+    <string name="welcome_db">欢迎来到数据库操作页面</string>
+    <string name="db_query">条件查询</string>
+    <string name="db_add">增加</string>
+    <string name="db_delete">删除</string>
+    <string name="db_update">修改</string>
+    <string name="db_query_all">查询全部</string>
+    <string name="db_no_data">数据库中还没有数据</string>
 </resources>

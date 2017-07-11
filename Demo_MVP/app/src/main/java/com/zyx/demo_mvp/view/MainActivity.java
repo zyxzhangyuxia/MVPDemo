@@ -62,6 +62,7 @@ public class MainActivity extends AppCompatActivity implements ILogin{
     public void loginSuccess(String userName, String pwd) {
         mainPresenter.showMsg(getResources().getString(R.string.login_success));
         mainPresenter.saveLoginUserInfo(userName,pwd);
+        mainPresenter.startActivity(DbActivity.class);
     }
 
     @Override
