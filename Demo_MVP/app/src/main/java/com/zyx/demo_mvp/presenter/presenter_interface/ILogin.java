@@ -1,4 +1,4 @@
-package com.zyx.demo_mvp.presenter;
+package com.zyx.demo_mvp.presenter.presenter_interface;
 
 import android.content.Context;
 
@@ -8,11 +8,9 @@ import android.content.Context;
  * p 与 v 交互的接口
  */
 
-public interface ILogin {
-    /**
-     * 获取上下文对象
-     * @return
-     */
+public interface ILogin extends IBase{
+
+    @Override
     Context getContext();
 
     /**

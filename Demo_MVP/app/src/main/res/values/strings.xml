@@ -12,4 +12,6 @@
     <string name="db_update">修改</string>
     <string name="db_query_all">查询全部</string>
     <string name="db_no_data">数据库中还没有数据</string>
+    <string name="request_nectwork">去网上看看</string>
+    <string name="getpngpicture">获取所有png图片</string>
 </resources>

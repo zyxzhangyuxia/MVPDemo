@@ -8,8 +8,7 @@ import android.widget.Button;
 import android.widget.EditText;
 
 import com.zyx.demo_mvp.R;
-import com.zyx.demo_mvp.mode.UserLoginInfo;
-import com.zyx.demo_mvp.presenter.ILogin;
+import com.zyx.demo_mvp.presenter.presenter_interface.ILogin;
 import com.zyx.demo_mvp.presenter.MainPresenter;
 
 public class MainActivity extends AppCompatActivity implements ILogin{

@@ -1,4 +1,4 @@
-package com.zyx.demo_mvp.presenter;
+package com.zyx.demo_mvp.presenter.presenter_interface;
 
 import com.zyx.demo_mvp.mode.UserInfo;
 
@@ -9,7 +9,7 @@ import java.util.List;
  * 数据库操作接口,与Modle交互
  */
 
-public interface IDbOperation {
+public interface IDbOperation extends IBase{
 
     /**
      * 插入数据

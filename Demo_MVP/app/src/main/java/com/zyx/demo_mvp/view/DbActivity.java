@@ -12,7 +12,7 @@ import android.widget.TextView;
 import com.zyx.demo_mvp.R;
 import com.zyx.demo_mvp.mode.UserInfo;
 import com.zyx.demo_mvp.presenter.DbOperationPresenter;
-import com.zyx.demo_mvp.presenter.IDbViewUpdate;
+import com.zyx.demo_mvp.presenter.presenter_interface.IDbViewUpdate;
 import com.zyx.demo_mvp.view.adapter.ListAdapter;
 
 import java.util.ArrayList;
@@ -49,6 +49,9 @@ public class DbActivity extends AppCompatActivity implements View.OnClickListene
     @Bind(R.id.tv_no_data)
     TextView tv_no_data;
 
+    @Bind(R.id.btn_net)
+    Button btn_net;
+
     DbOperationPresenter dbOperationPresenter;
     ListAdapter listAdapter;
     List<UserInfo> userInfoList;
@@ -72,6 +75,7 @@ public class DbActivity extends AppCompatActivity implements View.OnClickListene
         btn_update.setOnClickListener(this);
         btn_query_condition.setOnClickListener(this);
         btn_query_all.setOnClickListener(this);
+        btn_net.setOnClickListener(this);
     }
 
     /**
@@ -106,6 +110,9 @@ public class DbActivity extends AppCompatActivity implements View.OnClickListene
                 break;
             case R.id.btn_query_condition:
                 dbOperationPresenter.QueryByCondition();
+                break;
+            case R.id.btn_net:
+                dbOperationPresenter.startActivity(TestRxActivity.class);
                 break;
             default:
                 break;

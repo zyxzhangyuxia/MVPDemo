@@ -1,4 +1,4 @@
-package com.zyx.demo_mvp.presenter;
+package com.zyx.demo_mvp.presenter.presenter_interface;
 
 /**
  * Created by vectoria on 2017/7/11.
@@ -13,11 +13,10 @@ import java.util.List;
 /**
  *
  */
-public interface IDbViewUpdate {
-    /**
-     * 获取上下文对象
-     * @return
-     */
+public interface IDbViewUpdate extends IBase{
+
+    @Override
     Context getContext();
+
     void update(List<UserInfo> userInfoList);
 }
